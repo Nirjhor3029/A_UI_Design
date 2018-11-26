@@ -174,8 +174,11 @@ Route::group(['middleware' => ['auth:admin']], function () {
   Route::post('/admin/service/active/{id}','ProductController@active')->name('service.active');
 
   Route::resource('admin/vendors','VendorAdmin');
+
   Route::post('/admin/vendors/suspend/{id}','VendorAdmin@suspend')->name('vendors.suspend');
   Route::post('/admin/vendors/active/{id}','VendorAdmin@active')->name('vendors.active');
+
+
 
   Route::get('/admin/vendor/packages','VendorAdmin@packages')->name('vendor-packages');
   Route::get('/admin/vendor/packages/{id}','VendorAdmin@getpackages')->name('vendor.getPack');

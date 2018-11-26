@@ -2368,3 +2368,9 @@ span .irs-grid-text, span .irs-single{
 span .irs-min , span .irs-max{
   display: none;
 }
+
+
+/*for search hidden*/
+.select2-search__field{
+  display: none !important;
+}

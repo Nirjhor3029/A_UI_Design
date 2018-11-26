@@ -44,6 +44,9 @@ class VendorAdmin extends Controller
      */
     public function store(Request $request)
     {
+
+        //dd($request->venue_area);
+
         $add = new vendors;
         $add->catagory_id = $request->vendor_catagory;
         $add->title = $request->vendor_title;
@@ -74,10 +77,10 @@ class VendorAdmin extends Controller
         $datas->low_price = $request->lowest_price;
 
         if(isset($request->venue_area)){
-          $datas->area = $request->area;
+          $datas->area = $request->venue_area;
         }
         if(isset($request->kazi_area)){
-          $datas->area = $request->area;
+          $datas->area = $request->kazi_area;
         }
         if(isset($request->menu_type)){
           $menu = implode(',',$request->menu_type);

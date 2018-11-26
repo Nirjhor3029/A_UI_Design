@@ -68,7 +68,7 @@
                         @endif
                         {{-- Delete Button --}}
                         {!! Form::open(['method' => 'DELETE','route'=> ['vendors.destroy', $data->id,'catagoryid'=>$data->catagory->id], 'style' => 'display:inline']) !!}
-                        {!! Form::button('<span class="glyphicon glyphicon-remove" style="" aria-hidden="true"></span>',['class'=> 'btn btn-danger','type' => 'submit','data-toggle'=>'tooltip', 'data-placement'=>'bottom', 'title'=>'Remove Vendor']) !!}
+                        {!! Form::button('<span class="glyphicon glyphicon-remove" style="" aria-hidden="true"></span>',['class'=> 'btn btn-danger','type' => 'submit','data-toggle'=>'tooltip', 'data-placement'=>'bottom', 'title'=>'Remove Vendor','onclick'=>'return deleteAlert()'])  !!}
                         {!! Form::close()!!}
                       </center>
                     </td>
@@ -101,5 +101,11 @@
       'autoWidth'   : false
     })
   })
+
+    function deleteAlert(){
+      //alert("alert");
+      var x = confirm("Are you sure you want to delete this data ? ");
+      return x;
+    }
   </script>
 @endpush

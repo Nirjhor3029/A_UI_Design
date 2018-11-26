@@ -117,25 +117,25 @@
                     <tr>
                       <td>
                         <div class="form-group">
-                          <label for="feature1" class="control-label">Feature 1: <span style="color:red;">*</span> </label>
+                          <label for="feature1" class="control-label" id="feature1_lbl">Feature 1: <span style="color:red;">*</span> </label>
                           <input type="text" class="form-control" id="feature1" name="feature1" placeholder="Feature 1" required>
                         </div>
                       </td>
                       <td>
                         <div class="form-group">
-                          <label for="feature2" class="control-label">Feature 2: <span style="color:red;">*</span> </label>
+                          <label for="feature2" class="control-label" id="feature2_lbl">Feature 2: <span style="color:red;">*</span> </label>
                           <input type="text" class="form-control" id="feature2" name="feature2" placeholder="Feature 2" required>
                         </div>
                       </td>
                       <td>
                         <div class="form-group">
-                          <label for="feature3" class="control-label">Feature 3: <span style="color:red;">*</span> </label>
+                          <label for="feature3" class="control-label" id="feature3_lbl">Feature 3: <span style="color:red;">*</span> </label>
                           <input type="text" class="form-control" id="feature3" name="feature3" placeholder="Feature 3" required>
                         </div>
                       </td>
                       <td>
                         <div class="form-group">
-                          <label for="feature4" class="control-label">Feature 4: <span style="color:red;">*</span> </label>
+                          <label for="feature4" class="control-label" id="feature4_lbl">Feature 4: <span style="color:red;">*</span> </label>
                           <input type="text" class="form-control" id="feature4" name="feature4" placeholder="Feature 4" required>
                         </div>
                       </td>
@@ -144,25 +144,25 @@
                     <tr>
                       <td>
                         <div class="form-group">
-                          <label for="feature5" class="control-label">Feature 5: <span style="color:red;">*</span> </label>
+                          <label for="feature5" class="control-label" id="feature5_lbl">Feature 5: <span style="color:red;">*</span> </label>
                           <input type="text" class="form-control" id="feature5" name="feature5" placeholder="Feature 5" required>
                         </div>
                       </td>
                       <td>
                         <div class="form-group">
-                          <label for="feature6" class="control-label">Feature 6: <span style="color:red;">*</span> </label>
+                          <label for="feature6" class="control-label" id="feature6_lbl">Feature 6: <span style="color:red;">*</span> </label>
                           <input type="text" class="form-control" id="feature6" name="feature6" placeholder="Feature 6" required>
                         </div>
                       </td>
                       <td>
                         <div class="form-group">
-                          <label for="feature7" class="control-label">Feature 7:</label>
+                          <label for="feature7" class="control-label" id="feature7_lbl">Feature 7:</label>
                           <input type="text" class="form-control" id="feature7" name="feature7" placeholder="Feature 7">
                         </div>
                       </td>
                       <td>
                         <div class="form-group">
-                          <label for="feature8" class="control-label">Feature 8:</label>
+                          <label for="feature8" class="control-label" id="feature8_lbl">Feature 8:</label>
                           <input type="text" class="form-control" id="feature8" name="feature8" placeholder="Feature 8">
                         </div>
                       </td>
@@ -182,6 +182,7 @@
                   <div class="col-md-10">
                     <select class="form-control" name="venue_area" id="venue_area_select">
                       <option value="">-- Area In The City --</option>
+                      <option class="option" value="destination wedding">destination wedding</option>
                       <option class="option" value="uttara">Uttara</option>
                       <option class="option" value="Lalmatia-Dhanmondi">Lalmatia - Dhanmondi</option>
                       <option class="option" value="Paltan-Motijheel">Paltan - Motijheel</option>
@@ -396,6 +397,8 @@
   $('#feature_image').on("change", previewfeatureImages);
 
   $('#vendor_catagory').on('change', function () {
+
+
     if (this.value == '9') {
       $("#venue_area").css('display', (this.value == '9') ? 'block' : 'none').attr('required',true);
       $("#menu_type").css('display', (this.value == '9') ? 'none' : 'none').attr('required',true);
@@ -403,6 +406,18 @@
       $("#speciality").css('display', (this.value == '9') ? 'none' : 'none').attr('required',true);
       $("#bakery_speciality").css('display', (this.value == '9') ? 'none' : 'none').attr('required',true);
       $("#home_service").css('display', (this.value == '9') ? 'none' : 'none').attr('required',true);
+
+
+      //alert('hello');
+
+      /*Edit for feature1 - feature8 => change as category */
+
+      //$("#feature1").attr('placeholder','Location');
+      //$("#feature1").html('nodevalue','Location');
+
+      chooseFeature_AsCategory(9);
+
+      /*End of Edit for feature1 - feature8 => change as category */
     }
     else if (this.value == '11'){
       $("#menu_type").css('display', (this.value == '11') ? 'block' : 'none').attr('required',true);
@@ -411,6 +426,10 @@
       $("#speciality").css('display', (this.value == '11') ? 'none' : 'none').attr('required',true);
       $("#bakery_speciality").css('display', (this.value == '11') ? 'none' : 'none').attr('required',true);
       $("#home_service").css('display', (this.value == '11') ? 'none' : 'none').attr('required',true);
+
+      /*Edit for feature1 - feature8 => change as category */
+      chooseFeature_AsCategory(11);
+      /*End of Edit for feature1 - feature8 => change as category */
     }
     else if (this.value == '12'){
       $("#event_type").css('display', (this.value == '12') ? 'block' : 'none').attr('required',true);
@@ -419,6 +438,10 @@
       $("#speciality").css('display', (this.value == '12') ? 'none' : 'none').attr('required',true);
       $("#bakery_speciality").css('display', (this.value == '12') ? 'none' : 'none').attr('required',true);
       $("#home_service").css('display', (this.value == '12') ? 'none' : 'none').attr('required',true);
+
+      /*Edit for feature1 - feature8 => change as category */
+      chooseFeature_AsCategory(12);
+      /*End of Edit for feature1 - feature8 => change as category */
     }
     else if (this.value == '13'){
       $("#event_type").css('display', (this.value == '13') ? 'block' : 'none').attr('required',true);
@@ -427,6 +450,10 @@
       $("#speciality").css('display', (this.value == '13') ? 'none' : 'none').attr('required',true);
       $("#bakery_speciality").css('display', (this.value == '13') ? 'none' : 'none').attr('required',true);
       $("#home_service").css('display', (this.value == '13') ? 'none' : 'none').attr('required',true);
+
+      /*Edit for feature1 - feature8 => change as category */
+      chooseFeature_AsCategory(13);
+      /*End of Edit for feature1 - feature8 => change as category */
     }
     else if (this.value == '14'){
       $("#speciality").css('display', (this.value == '14') ? 'block' : 'none').attr('required',true);
@@ -435,6 +462,10 @@
       $("#event_type").css('display', (this.value == '14') ? 'none' : 'none').attr('required',true);
       $("#menu_type").css('display', (this.value == '14') ? 'none' : 'none').attr('required',true);
       $("#venue_area").css('display', (this.value == '14') ? 'none' : 'none').attr('required',true);
+
+      /*Edit for feature1 - feature8 => change as category */
+      chooseFeature_AsCategory(14);
+      /*End of Edit for feature1 - feature8 => change as category */
     }
     else if (this.value == '16'){
       $("#bakery_speciality").css('display', (this.value == '16') ? 'block' : 'none').attr('required',true);
@@ -443,6 +474,10 @@
       $("#menu_type").css('display', (this.value == '16') ? 'none' : 'none').attr('required',true);
       $("#venue_area").css('display', (this.value == '16') ? 'none' : 'none').attr('required',true);
       $("#speciality").css('display', (this.value == '16') ? 'none' : 'none').attr('required',true);
+
+      /*Edit for feature1 - feature8 => change as category */
+      chooseFeature_AsCategory(16);
+      /*End of Edit for feature1 - feature8 => change as category */
     }
     else if (this.value == '17'){
       $("#home_service").css('display', (this.value == '17') ? 'block' : 'none').attr('required',true);
@@ -451,9 +486,105 @@
       $("#venue_area").css('display', (this.value == '17') ? 'none' : 'none').attr('required',true);
       $("#speciality").css('display', (this.value == '17') ? 'none' : 'none').attr('required',true);
       $("#bakery_speciality").css('display', (this.value == '17') ? 'none' : 'none').attr('required',true);
+
+      /*Edit for feature1 - feature8 => change as category */
+      chooseFeature_AsCategory(17);
+      /*End of Edit for feature1 - feature8 => change as category */
     }
   });
   $('#menu_type_select,#event_type_select,#speciality_select,#bakery_speciality_select,#venue_area_select,#home_service_select').select2();
+
+
+    function chooseFeature_AsCategory(category_id){
+
+
+      /*
+       * 9  => venue
+       * 11 => catering
+       * 12 => photography and cinematography
+       * 13 => decoration
+       * 14 => invitation cards
+       * 15 =>
+       * 16 => bakeries
+       * 17 => mehedi
+       * 18 =>
+       * 19 =>
+       *
+       *
+        * */
+
+
+      if(category_id == 9){
+        $("#feature1").attr('placeholder','Location');
+        $("#feature2").attr('placeholder','Venue Type');
+        $("#feature3").attr('placeholder','Max. Seating Capacity');
+        $("#feature4").attr('placeholder','Outside Caterer');
+        $("#feature5").attr('placeholder','Outside Decoration');
+        $("#feature6").attr('placeholder','Parking Size');
+        $("#feature7").attr('placeholder','Booking Method');
+        $("#feature8").attr('placeholder','Timing');
+      }
+      else if(category_id == 11){
+        $("#feature1").attr('placeholder','Location');
+        $("#feature2").attr('placeholder','Industry Experience');
+        $("#feature3").attr('placeholder','Min. Order');
+        $("#feature4").attr('placeholder','Cookeries & Cutleries');
+        $("#feature5").attr('placeholder','Waiter');
+        $("#feature6").attr('placeholder','Home Delivery');
+        $("#feature7").attr('placeholder','Booking Method');
+        $("#feature8").attr('placeholder','Outside City Service');
+      }
+      else if(category_id == 12){
+        $("#feature1").attr('placeholder','Location');
+        $("#feature2").attr('placeholder','Venue Type');
+        $("#feature3").attr('placeholder','Max. Seating Capacity');
+        $("#feature4").attr('placeholder','Outside Caterer');
+        $("#feature5").attr('placeholder','Outside Decoration');
+        $("#feature6").attr('placeholder','Parking Size');
+        $("#feature7").attr('placeholder','Booking Method');
+        $("#feature8").attr('placeholder','Timing');
+      }
+      else if(category_id == 13){
+        $("#feature1").attr('placeholder','Location');
+        $("#feature2").attr('placeholder','Venue Type');
+        $("#feature3").attr('placeholder','Max. Seating Capacity');
+        $("#feature4").attr('placeholder','Outside Caterer');
+        $("#feature5").attr('placeholder','Outside Decoration');
+        $("#feature6").attr('placeholder','Parking Size');
+        $("#feature7").attr('placeholder','Booking Method');
+        $("#feature8").attr('placeholder','Timing');
+      }
+      else if(category_id == 14){
+        $("#feature1").attr('placeholder','Location');
+        $("#feature2").attr('placeholder','Venue Type');
+        $("#feature3").attr('placeholder','Max. Seating Capacity');
+        $("#feature4").attr('placeholder','Outside Caterer');
+        $("#feature5").attr('placeholder','Outside Decoration');
+        $("#feature6").attr('placeholder','Parking Size');
+        $("#feature7").attr('placeholder','Booking Method');
+        $("#feature8").attr('placeholder','Timing');
+      }
+      else if(category_id == 16){
+        $("#feature1").attr('placeholder','Location');
+        $("#feature2").attr('placeholder','Venue Type');
+        $("#feature3").attr('placeholder','Max. Seating Capacity');
+        $("#feature4").attr('placeholder','Outside Caterer');
+        $("#feature5").attr('placeholder','Outside Decoration');
+        $("#feature6").attr('placeholder','Parking Size');
+        $("#feature7").attr('placeholder','Booking Method');
+        $("#feature8").attr('placeholder','Timing');
+      }
+      else if(category_id == 17){
+        $("#feature1").attr('placeholder','Location');
+        $("#feature2").attr('placeholder','Venue Type');
+        $("#feature3").attr('placeholder','Max. Seating Capacity');
+        $("#feature4").attr('placeholder','Outside Caterer');
+        $("#feature5").attr('placeholder','Outside Decoration');
+        $("#feature6").attr('placeholder','Parking Size');
+        $("#feature7").attr('placeholder','Booking Method');
+        $("#feature8").attr('placeholder','Timing');
+      }
+    }
 </script>
 
 @endpush

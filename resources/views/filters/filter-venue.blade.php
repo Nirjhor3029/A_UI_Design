@@ -17,8 +17,9 @@
   {{-- Filter City Area --}}
   <div class="col-lg-4">
     <div class="form-group" style="width:100%;padding-top: 1rem;">
-      <select class="form-control area" id="area" style="width:100%;">
+      <select class="form-control area" id="area"  style="width:100%;"> <!-- id="area" -->
         <option value="">Area In The City</option>
+        <option class="option" value="Destination Wedding">Destination Wedding</option>
         <option class="option" value="uttara">Uttara</option>
         <option class="option" value="Lalmatia-Dhanmondi">Lalmatia - Dhanmondi</option>
         <option class="option" value="Paltan-Motijheel">Paltan - Motijheel</option>
@@ -38,7 +39,7 @@
   {{-- Filter Capacity --}}
   <div class="col-lg-4">
     <div class="form-group" style="width:100%;padding-top: 1rem;">
-      <select class="form-control" id="capacity" style="width:100%;">
+      <select class="form-control" id="capacity"  style="width:100%;"> <!-- id="capacity" -->
         <option value="">Capacity</option>
         <option class="option" value="<100">Less then 100</option>
         <option class="option" value="100-200">100-200</option>

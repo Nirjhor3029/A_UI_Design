@@ -24,7 +24,7 @@
   <section class="page-section services">
     <div class="container">
       <div class="wow fadeIn text-center">
-        <h3 id="service-name">{{ $catagorydata->name }}</h3>
+        <h3 id="service-name">{{ $catagorydata->name }}  </h3>
         <hr class="colored">
       </div>
 
