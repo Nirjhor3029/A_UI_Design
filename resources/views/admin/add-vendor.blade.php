@@ -171,7 +171,7 @@
                 </table>
 
                 <div class="form-group">
-                  <label class="control-label col-md-2" for="lowest_price">Lowest Price:</label>
+                  <label class="control-label col-md-2" for="lowest_price" id="lowest_price_lbl">Lowest Price:</label>
                   <div class="col-md-10">
                     <input type="text" class="form-control" id="lowest_price" name="lowest_price" placeholder="Enter the lowest price for the filter" required>
                   </div>
@@ -419,6 +419,11 @@
 
       /*End of Edit for feature1 - feature8 => change as category */
     }
+    else if (this.value == '10'){
+      /*Edit for feature1 - feature8 => change as category */
+      chooseFeature_AsCategory(10);
+      /*End of Edit for feature1 - feature8 => change as category */
+    }
     else if (this.value == '11'){
       $("#menu_type").css('display', (this.value == '11') ? 'block' : 'none').attr('required',true);
       $("#venue_area").css('display', (this.value == '11') ? 'none' : 'none').attr('required',true);
@@ -467,6 +472,11 @@
       chooseFeature_AsCategory(14);
       /*End of Edit for feature1 - feature8 => change as category */
     }
+    else if (this.value == '15'){
+      /*Edit for feature1 - feature8 => change as category */
+      chooseFeature_AsCategory(15);
+      /*End of Edit for feature1 - feature8 => change as category */
+    }
     else if (this.value == '16'){
       $("#bakery_speciality").css('display', (this.value == '16') ? 'block' : 'none').attr('required',true);
       $("#home_service").css('display', (this.value == '16') ? 'none' : 'none').attr('required',true);
@@ -491,30 +501,58 @@
       chooseFeature_AsCategory(17);
       /*End of Edit for feature1 - feature8 => change as category */
     }
+    else if (this.value == '18'){ /*kazi*/
+
+      /*Edit for feature1 - feature8 => change as category */
+      chooseFeature_AsCategory(18);
+      /*End of Edit for feature1 - feature8 => change as category */
+    }
   });
+
   $('#menu_type_select,#event_type_select,#speciality_select,#bakery_speciality_select,#venue_area_select,#home_service_select').select2();
 
 
     function chooseFeature_AsCategory(category_id){
 
 
+      /*$("#feature5").css('display','block').attr('required',true);
+      $("#feature6").css('display','block').attr('required',true);
+      $("#feature7").css('display','block').attr('required',true);
+      $("#feature8").css('display','block').attr('required',true);
+      $("#lowest_price").css('display','block').attr('required',true);
+      $("#feature5_lbl").css('display','block').attr('required',true);
+      $("#feature6_lbl").css('display','block').attr('required',true);
+      $("#feature7_lbl").css('display','block').attr('required',true);
+      $("#feature8_lbl").css('display','block').attr('required',true);
+      $("#lowest_price_lbl").css('display','block').attr('required',true);*/
+
+
+      /*Edit for Kazi & Mehedi*/
+      $("#feature5").prop('disabled', false).attr('required',true);
+      $("#feature6").prop('disabled', false).attr('required',true);
+      $("#feature7").prop('disabled', false).attr('required',true);
+      $("#feature8").prop('disabled', false).attr('required',true);
+      $("#lowest_price").prop('disabled',false).attr('required',true);
+      /*End of Edit for Kazi & Mehedi*/
+
       /*
        * 9  => venue
+       * 10 => dj
        * 11 => catering
        * 12 => photography and cinematography
        * 13 => decoration
        * 14 => invitation cards
-       * 15 =>
+       * 15 => makeup artist
        * 16 => bakeries
        * 17 => mehedi
-       * 18 =>
+       * 18 => kazi
        * 19 =>
        *
        *
         * */
 
 
-      if(category_id == 9){
+      if(category_id == 9){  /*venue*/
         $("#feature1").attr('placeholder','Location');
         $("#feature2").attr('placeholder','Venue Type');
         $("#feature3").attr('placeholder','Max. Seating Capacity');
@@ -524,7 +562,17 @@
         $("#feature7").attr('placeholder','Booking Method');
         $("#feature8").attr('placeholder','Timing');
       }
-      else if(category_id == 11){
+      else if(category_id == 10){ /*dj*/
+        $("#feature1").attr('placeholder','Performing Time');
+        $("#feature2").attr('placeholder','Industry Experience (Years)');
+        $("#feature3").attr('placeholder','Light Setup');
+        $("#feature4").attr('placeholder','Sound Setup');
+        $("#feature5").attr('placeholder','Custom Song List');
+        $("#feature6").attr('placeholder','Booking Method');
+        $("#feature7").attr('placeholder','Book Before');
+        $("#feature8").attr('placeholder','Outside City Service');
+      }
+      else if(category_id == 11){ /*catering*/
         $("#feature1").attr('placeholder','Location');
         $("#feature2").attr('placeholder','Industry Experience');
         $("#feature3").attr('placeholder','Min. Order');
@@ -534,55 +582,107 @@
         $("#feature7").attr('placeholder','Booking Method');
         $("#feature8").attr('placeholder','Outside City Service');
       }
-      else if(category_id == 12){
+      else if(category_id == 12){ /*photography and cinematography*/
         $("#feature1").attr('placeholder','Location');
-        $("#feature2").attr('placeholder','Venue Type');
-        $("#feature3").attr('placeholder','Max. Seating Capacity');
-        $("#feature4").attr('placeholder','Outside Caterer');
-        $("#feature5").attr('placeholder','Outside Decoration');
-        $("#feature6").attr('placeholder','Parking Size');
-        $("#feature7").attr('placeholder','Booking Method');
-        $("#feature8").attr('placeholder','Timing');
+        $("#feature2").attr('placeholder','Industry Experience');
+        $("#feature3").attr('placeholder','Service Time');
+        $("#feature4").attr('placeholder','Corporate Event');
+        $("#feature5").attr('placeholder','Additional Hour Rate');
+        $("#feature6").attr('placeholder','Booking Method');
+        $("#feature7").attr('placeholder','Delivery Time');
+        $("#feature8").attr('placeholder','Outside City Service');
       }
-      else if(category_id == 13){
+      else if(category_id == 13){ /*decoration*/
         $("#feature1").attr('placeholder','Location');
-        $("#feature2").attr('placeholder','Venue Type');
-        $("#feature3").attr('placeholder','Max. Seating Capacity');
-        $("#feature4").attr('placeholder','Outside Caterer');
-        $("#feature5").attr('placeholder','Outside Decoration');
-        $("#feature6").attr('placeholder','Parking Size');
-        $("#feature7").attr('placeholder','Booking Method');
-        $("#feature8").attr('placeholder','Timing');
+        $("#feature2").attr('placeholder','Industry Experience');
+        $("#feature3").attr('placeholder','Booking Method');
+        $("#feature4").attr('placeholder','Outside City Service');
+        $("#feature5").attr('placeholder','Theam Design');
+        $("#feature6").attr('placeholder','Wedding');
+        $("#feature7").attr('placeholder','Corporate Event');
+        $("#feature8").attr('placeholder','Birthday');
       }
-      else if(category_id == 14){
+      else if(category_id == 14){ /*invitation cards*/
         $("#feature1").attr('placeholder','Location');
-        $("#feature2").attr('placeholder','Venue Type');
-        $("#feature3").attr('placeholder','Max. Seating Capacity');
-        $("#feature4").attr('placeholder','Outside Caterer');
-        $("#feature5").attr('placeholder','Outside Decoration');
-        $("#feature6").attr('placeholder','Parking Size');
-        $("#feature7").attr('placeholder','Booking Method');
-        $("#feature8").attr('placeholder','Timing');
+        $("#feature2").attr('placeholder','Industry Experience');
+        $("#feature3").attr('placeholder','Min. Order');
+        $("#feature4").attr('placeholder','Custom Design');
+        $("#feature5").attr('placeholder','Handmade Card');
+        $("#feature6").attr('placeholder','Delivery Time');
+        $("#feature7").attr('placeholder','Home Delivery');
+        $("#feature8").attr('placeholder','Booking Method');
       }
-      else if(category_id == 16){
+      else if(category_id == 15){ /*makeup artist*/
         $("#feature1").attr('placeholder','Location');
-        $("#feature2").attr('placeholder','Venue Type');
-        $("#feature3").attr('placeholder','Max. Seating Capacity');
-        $("#feature4").attr('placeholder','Outside Caterer');
-        $("#feature5").attr('placeholder','Outside Decoration');
-        $("#feature6").attr('placeholder','Parking Size');
-        $("#feature7").attr('placeholder','Booking Method');
-        $("#feature8").attr('placeholder','Timing');
+        $("#feature2").attr('placeholder','Industry Experience');
+        $("#feature3").attr('placeholder','Timing');
+        $("#feature4").attr('placeholder','Men only\\Women only\\ Both');
+        $("#feature5").attr('placeholder','Home Service');
+        $("#feature6").attr('placeholder','Booking Method');
+        $("#feature7").attr('placeholder','Book Before');
+        $("#feature8").attr('placeholder','Outside City Service');
       }
-      else if(category_id == 17){
+      else if(category_id == 16){ /*bakeries*/
         $("#feature1").attr('placeholder','Location');
-        $("#feature2").attr('placeholder','Venue Type');
-        $("#feature3").attr('placeholder','Max. Seating Capacity');
-        $("#feature4").attr('placeholder','Outside Caterer');
-        $("#feature5").attr('placeholder','Outside Decoration');
-        $("#feature6").attr('placeholder','Parking Size');
+        $("#feature2").attr('placeholder','Industry Experience');
+        $("#feature3").attr('placeholder','Min. Order');
+        $("#feature4").attr('placeholder','Customization');
+        $("#feature5").attr('placeholder','Wedding Cake');
+        $("#feature6").attr('placeholder','Home Delivery');
         $("#feature7").attr('placeholder','Booking Method');
-        $("#feature8").attr('placeholder','Timing');
+        $("#feature8").attr('placeholder','Order Before');
+      }
+      else if(category_id == 17){ /*mehedi*/
+        $("#feature1").attr('placeholder','Location');
+        $("#feature2").attr('placeholder','Industry Experience');
+        $("#feature3").attr('placeholder','Home Service');
+        $("#feature4").attr('placeholder','Booking Method');
+        $("#feature5").attr('placeholder','Book Before');
+        $("#feature6").attr('placeholder','Outside City Service');
+
+        /*$("#feature7").css('display','none').attr('required',false);
+        $("#feature8").css('display','none').attr('required',false);
+        $("#feature7_lbl").css('display','block').attr('required',false);
+        $("#feature8_lbl").css('display','block').attr('required',false);*/
+        //$("#lowest_price_lbl").css('display','block').attr('required',true);
+
+        $("#feature7").attr('placeholder','').prop('disabled', true).attr('required',false);
+        $("#feature8").attr('placeholder','').prop('disabled', true).attr('required',false);
+
+
+      }
+      else if(category_id == 18){ /*kazi*/
+        $("#feature1").attr('placeholder','Location');
+        $("#feature2").attr('placeholder','Industry Experience (Years)');
+        $("#feature3").attr('placeholder','Booking Method');
+        $("#feature4").attr('placeholder','Book Before');
+
+
+
+        $("#feature5").attr('placeholder','').prop('disabled', true).attr('required',false);
+        $("#feature6").attr('placeholder','').prop('disabled', true).attr('required',false);
+        $("#feature7").attr('placeholder','').prop('disabled', true).attr('required',false);
+        $("#feature8").attr('placeholder','').prop('disabled', true).attr('required',false);
+        $("#lowest_price").attr('placeholder','').prop('disabled', true).attr('required',false);
+
+
+
+        /*$("#feature5").css('display','none').attr('required',false);
+        $("#feature6").css('display','none').attr('required',false);
+        $("#feature7").css('display','none').attr('required',false);
+        $("#feature8").css('display','none').attr('required',false);
+
+        $("#lowest_price").css('display','none').attr('required',false);
+
+
+        $("#feature5_lbl").css('display','block').attr('required',false);
+        $("#feature6_lbl").css('display','block').attr('required',false);
+        $("#feature7_lbl").css('display','block').attr('required',false);
+        $("#feature8_lbl").css('display','block').attr('required',false);
+
+        $("#lowest_price_lbl").css('display','block').attr('required',false);*/
+
+
       }
     }
 </script>

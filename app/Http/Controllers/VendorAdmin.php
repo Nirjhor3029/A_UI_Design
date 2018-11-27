@@ -70,11 +70,28 @@ class VendorAdmin extends Controller
         $datas->feature_2 = $request->feature2;
         $datas->feature_3 = $request->feature3;
         $datas->feature_4 = $request->feature4;
-        $datas->feature_5 = $request->feature5;
-        $datas->feature_6 = $request->feature6;
-        $datas->feature_7 = $request->feature7;
-        $datas->feature_8 = $request->feature8;
-        $datas->low_price = $request->lowest_price;
+
+        /*Edit for kazi & Mehdi*/
+        if(isset($request->feature5)){
+            $datas->feature_5 = $request->feature5;
+        }
+        if(isset($request->feature6)){
+            $datas->feature_6 = $request->feature6;
+        }
+        if(isset($request->feature7)){
+            $datas->feature_7 = $request->feature7;
+        }
+        if(isset($request->feature8)){
+            $datas->feature_8 = $request->feature8;
+        }
+        if(isset($request->lowest_price)){
+            $datas->low_price = $request->lowest_price;
+        }
+
+        /*End of Edit for kazi & Mehdi*/
+
+
+
 
         if(isset($request->venue_area)){
           $datas->area = $request->venue_area;
