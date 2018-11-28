@@ -110,6 +110,16 @@ Route::group(['middleware' => ['auth']], function () {
   Route::get('/inbox','MessageController@myMessage')->name('User.Message');
   Route::get('/inbox/{id}','MessageController@singleMessage')->name('User.SingleMess');
 
+  /*
+ * Nir Edit for user inbox
+ * */
+
+  Route::post('/inbox/sendMessage','MessageController@sendMessage')->name('User.SendMessage');
+
+  /* End of
+   * Nir Edit for user inbox
+   * */
+
   // Route::get('/add-address', function(){ return view('user.add-address'); })->name('add-address');
 
 
