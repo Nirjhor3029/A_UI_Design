@@ -211,4 +211,19 @@ class VendorServices extends Controller
 
 
     }
+
+
+  /*all vendors*/
+
+  public function all_vendors(){
+
+
+
+    $view = view('layouts.app');
+    $sub_view = view('pages.all_vendors');
+
+    return $view->with('content',$sub_view);
+
+
+  }
   }

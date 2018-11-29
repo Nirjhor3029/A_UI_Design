@@ -156,7 +156,7 @@
                 $("#queryid").val(id);
                 $('#div1').scrollTop($('#div1')[0].scrollHeight);
                 //$('html').scrollTop(100);
-                document.getElementById("scroll_p").scrollIntoView();
+                //document.getElementById("scroll_p").scrollIntoView();
             }
         });
 
@@ -204,6 +204,8 @@
                 $(".msg_history").empty().html(response);
                 $("#queryid").val(id);
                 $('#div1').scrollTop($('#div1')[0].scrollHeight);
+                document.getElementById("scroll_p").scrollIntoView();
+
             }
         });
 

@@ -10,20 +10,20 @@
   <script>
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-K2GSM38');
+})(window,document,'script','dataLayer','GTM-K2GSM38');
 </script>
 
 {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
 <title>{{ config('app.name', 'Ayojok | One Stop Solution for you event') }}</title>
 
-<!-- Scripts -->
-{{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+
 
 <!-- Bootstrap core CSS -->
 <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
 
 <!-- Custom fonts for this theme -->
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
 
 <!-- Plugin CSS -->
@@ -38,7 +38,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 
 <!-- Styles -->
-{{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+
 
 <link href="{{ asset('css/home.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('css/modal.css') }}" rel="stylesheet" type="text/css">
@@ -64,65 +64,69 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
 
         <!-- Top Menu -updated -->
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav ">
 
           <li class="nav-item">
-            <a class="nav-link" href="{{url('/')}}">Home</a>
+            <a class="nav-link" href="{{url('/')}}">{{--Home--}} <img class="logo_as_home" src="{{asset('img/ayojok_v2.png')}}"> </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url('how-it-works')}}">How it Works</a>
           </li>
           <li class="nav-item dropdown">
             {{-- <a class="nav-link" href="{{url('our-services')}}">Ayojok Services</a> --}}
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ayojok Services</a>
-            <ul class="megamenu dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ayojok Services</a>
+            <ul class="megamenu dropdown-menu scrollable-menu " id="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
                 <div class="row">
-                  <div class="col-lg-6">
-                    <ul>
-                      <li><a href="{{url('services/'.$catagory ='vehicle')}}">Vehicle</a></li>
-                      <li><a href="{{url('services/'.$catagory ='light & sound')}}">Light & Sound</a></li>
-                      <li><a href="{{url('services/'.$catagory ='holud snacks')}}">Holud Snacks</a></li>
-                      <li><a href="{{url('services/'.$catagory ='dala kula')}}">Dala Kula</a></li>
+                  <div class="col-lg-4 menu_padding">
+        <ul>
+                      <li><a href="{{url('services/'.$catagory ='vehicle')}}"> <img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}">  Vehicle</a></li>
+                      <li><a href="{{url('services/'.$catagory ='light & sound')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Light & Sound</a></li>
+                      <li><a href="{{url('services/'.$catagory ='holud snacks')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Holud Snacks</a></li>
+                      <li><a href="{{url('services/'.$catagory ='dala kula')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Dala Kula</a></li>
+                      {{--Secend edit--}}
+                      <li><a href="{{url('services/'.$catagory ='holud')}}"> <img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Holud Accessories</a></li>
+                      <li><a href="{{url('services/'.$catagory ='wedding')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Wedding Accessories</a></li>
                     </ul>
                   </div>
-                  <div class="col-lg-6">
+                  {{--<div class="col-lg-6">
                     <ul>
-                      <li><a href="{{url('services/'.$catagory ='holud')}}">Holud Accessories</a></li>
-                      <li><a href="{{url('services/'.$catagory ='wedding')}}">Wedding Accessories</a></li>
+                      <li><a href="{{url('services/'.$catagory ='holud')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Holud Accessories</a></li>
+                      <li><a href="{{url('services/'.$catagory ='wedding')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Wedding Accessories</a></li>
+                    </ul>
+                  </div>--}}
+
+
+                    <div class="vl"></div>
+
+
+
+
+                  <div class="col-lg-4" >
+
+                    <ul >
+                      <li><a href="{{url('vendors/'.$catagory ='venue')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Venue</a></li>
+                      <li><a href="{{url('vendors/'.$catagory ='catering')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Catering</a></li>
+                      <li><a href="{{url('vendors/'.$catagory ='photography and cinematography')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Photography</a></li>
+                      <li><a href="{{url('vendors/'.$catagory ='decoration')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Decoration</a></li>
+                      <li><a href="{{url('vendors/'.$catagory ='invitation cards')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Invitation Cards</a></li>
                     </ul>
                   </div>
+                  <div class="col-lg-3 menu_padding_3">
+                    <ul >
+                      <li><a href="{{url('vendors/'.$catagory ='dj')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> DJ</a></li>
+                      <li><a href="{{url('vendors/'.$catagory ='makeup artist')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Makeup Artist</a></li>
+                      <li><a href="{{url('vendors/'.$catagory ='bakeries')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Bakeries</a></li>
+                      <li><a href="{{url('vendors/'.$catagory ='mehedi')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Mehedi</a></li>
+                      <li><a href="{{url('vendors/'.$catagory ='kazi')}}"><img class="logo_as_megamenu" src="{{asset('img/menu/car.png')}}"> Kazi</a></li>
+                    </ul>
+                  </div>
+
                 </div>
               </li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vendors</a>
-            <ul class="megamenu dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <ul>
-                      <li><a href="{{url('vendors/'.$catagory ='venue')}}">Venue</a></li>
-                      <li><a href="{{url('vendors/'.$catagory ='catering')}}">Catering</a></li>
-                      <li><a href="{{url('vendors/'.$catagory ='photography and cinematography')}}">Photography & Cinematography</a></li>
-                      <li><a href="{{url('vendors/'.$catagory ='decoration')}}">Decoration</a></li>
-                      <li><a href="{{url('vendors/'.$catagory ='invitation cards')}}">Invitation Cards</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6">
-                    <ul>
-                      <li><a href="{{url('vendors/'.$catagory ='dj')}}">DJ</a></li>
-                      <li><a href="{{url('vendors/'.$catagory ='makeup artist')}}">Makeup Artist</a></li>
-                      <li><a href="{{url('vendors/'.$catagory ='bakeries')}}">Bakeries</a></li>
-                      <li><a href="{{url('vendors/'.$catagory ='mehedi')}}">Mehedi</a></li>
-                      <li><a href="{{url('vendors/'.$catagory ='kazi')}}">Kazi</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="{{url('event-coordinator')}}">Event Coordinator</a>
           </li>
@@ -132,37 +136,37 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           @if (Route::has('login'))
-            @auth
-              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Logout">
-                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fa fa-power-off"></i></a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                  {{ csrf_field() }}
-                </form>
-              </li>
-              <li class="nav-item dropdown loggeduser">
-                <a class="nav-link dropdown-toggle disabled" id="navbarDropdown" href="{{url('my-account')}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><small>Hello,</small>
-                  @if (is_null(Auth::user()->fname))
-                    {{str_limit(Auth::user()->name,10)}}
-                  @else
-                    {{Auth::user()->fname}}
-                  @endif
-                </a>
-                <ul class="megamenu dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <ul>
-                      <li><a href="{{route('my-account')}}">My Account</a></li>
-                      <li><a href="{{route('User.Message')}}">Unread Messages (<span id="inboxmess">@include('extra.mess')</span>)</a></li>
-                      <li><a href="{{route('client-orderlist', Auth::user()->id)}}">Orders</a></li>
-                      <li><a href="{{route('wishlist.index')}}">Wishlist</a></li>
-                      <li><a href="{{route('confirm-query')}}">My Queries</a></li>
-                      <li><a href="{{route('payment')}}">Payment</a></li>
-                    </ul>
-                  </li>
+          @auth
+          <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Logout">
+            <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fa fa-power-off"></i></a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              {{ csrf_field() }}
+            </form>
+          </li>
+          <li class="nav-item dropdown loggeduser">
+            <a class="nav-link dropdown-toggle disabled" id="navbarDropdown" href="{{url('my-account')}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><small>Hello,</small>
+              @if (is_null(Auth::user()->fname))
+              {{Auth::user()->name}}
+              @else
+              {{Auth::user()->fname}}
+              @endif
+            </a>
+            <ul class="megamenu dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <ul>
+                  <li><a href="{{route('my-account')}}">My Account</a></li>
+                  <li><a href="{{route('User.Message')}}">Unread Messages (<span id="inboxmess">@include('extra.mess')</span>)</a></li>
+                  <li><a href="{{route('client-orderlist', Auth::user()->id)}}">Orders</a></li>
+                  <li><a href="{{route('wishlist.index')}}">Wishlist</a></li>
+                  <li><a href="{{route('confirm-query')}}">My Queries</a></li>
+                  <li><a href="{{route('payment')}}">Payment</a></li>
                 </ul>
               </li>
-            @else
-              <li class="nav-item"><a class="nav-link" data-toggle="modal" href="#myModal">Login/Registration</a></li>
-            @endauth
+            </ul>
+          </li>
+          @else
+          <li class="nav-item"><a class="nav-link" data-toggle="modal" href="#myModal">Login/Registration</a></li>
+          @endauth
           @endif
           <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
             <a class="counter nav-link" href="{{url('wishlist')}}">
@@ -170,52 +174,66 @@
             </a>
           </li>
           {{-- <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Cart">
-          <a class="counter nav-link" href="{{url('cart')}}">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge badge-light" id="cartCount">@include('extra.cart')</span>
-        </a>
-      </li>
-      <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Query Cart">
-      <a class="counter nav-link" href="{{url('query-cart')}}">
-      <i class="fa fa-cart-arrow-down" aria-hidden="true"></i><span class="badge badge-light" id="queryCount">@include('extra.query')</span>
-    </a>
-  </li> --}}
+            <a class="counter nav-link" href="{{url('cart')}}">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge badge-light" id="cartCount">@include('extra.cart')</span>
+            </a>
+          </li>
+          <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Query Cart">
+            <a class="counter nav-link" href="{{url('query-cart')}}">
+              <i class="fa fa-cart-arrow-down" aria-hidden="true"></i><span class="badge badge-light" id="queryCount">@include('extra.query')</span>
+            </a>
+          </li> --}}
 
-</ul>
-<!-- /End Top menu updated -->
-</div>
-</div>
-</nav>
+        </ul>
+        <!-- /End Top menu updated -->
+      </div>
+    </div>
+  </nav>
 </div>
 
 @yield('content')
 
 <!-- Footer -->
-<footer class="footer" style="background-image: url({{asset('img/backgrounds/bg-footer.jpg')}})">
-  <div class="container">
+<footer class="footer" style="background-image: url({{asset('img/backgrounds/bg-footer_new.png')}});background-size: auto;">
+  <div class="container footer_padding">
     <!-- Row Contact -->
     <div class="row text-center">
-      <div class="col-lg-4 footer-contact-details">
-        <h4><i class="fa fa-phone"></i> Call</h4>
+      <div class="col-lg-3 footer-contact-details">
+        <h4>{{--<i class="fa fa-phone"></i>--}} Call</h4>
+
         <p>+880-1959 555 666</p>
       </div>
-      <div class="col-lg-4 footer-contact-details">
-        <h4><i class="fa fa-map-marker"></i> Visit</h4>
-        <p>Road 3/A, House 52/1, 5th Floor
-          <br>Dhanmondi, Dhaka - 1209 <br>Bangladesh
+      <div class="col-lg-6 footer-contact-details">
+        <h4>{{--<i class="fa fa-map-marker"></i>--}} Visit</h4>
+
+        <p> H 52/1,Floor 5,Rd 3/A,Dhanmondi
+          <br>Dhaka - 1209 Bangladesh
         </p>
       </div>
-      <div class="col-lg-4 footer-contact-details">
-        <h4><i class="fa fa-envelope"></i> Email</h4>
+      <div class="col-lg-3 footer-contact-details">
+        <h4>{{--<i class="fa fa-envelope"></i>--}} Email</h4>
+
         <p>
           <a href="mailto:info@ayojok.com">info@ayojok.com</a>
         </p>
       </div>
     </div>
 
+
+
+    {{--middle paragraph--}}
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <a href="#"><p class="footer_text_3">Enlist with us, and become our valued partner. Learn more.</p></a>
+      </div>
+    </div>
+    {{--Nir Edit--}}
+
+
     <!-- Row Social and Menu -->
     <div class="row">
       <!-- Footer Menu -->
-      <div class="col-lg-6 mb-5" style="display:inline;">
+      <div class="col-lg-8 mb-5" style="display: inherit;">
         <span class="footer-menu">
           <a href="{{url('about-us')}}">About Us</a>
         </span>
@@ -225,44 +243,50 @@
         <span class="footer-menu">
           <a href="{{url('privacy')}}">Privacy Policy</a>
         </span>
-        <span class="footer-menu">
+        {{--<span class="footer-menu">
           <a href="{{route('partners')}}">Be Our Partner</a>
-        </span>
+        </span>--}}
       </div>
       <!-- Footer Social -->
-      <div class="col-lg-2"></div>
-      <div class="col-lg-4 text-center" style="display:inline;">
+
+      <div class="col-lg-4 " style="display:inline; padding:0px;text-align:center">
+
+
 
         <span>
           <a href="https://www.facebook.com/ayojokevents" target="_blank">
-            <img class="img-fluid img-responsive social" src="{{asset('img/social/icon-21.png')}}" alt="">
+            <img class="img-fluid img-responsive social" src="{{asset('img/social/facebook.png')}}" alt="">
           </a>
         </span>
 
         <span>
           <a href="https://www.youtube.com/channel/UC2Dn5jQAF8TV3_hPAoESk-Q" target="_blank">
-            <img class="img-fluid img-responsive social" src="{{asset('img/social/icon-19.png')}}" alt="">
+            <img class="img-fluid img-responsive social" src="{{asset('img/social/instagram.png')}}"  alt="">
+
           </a>
         </span>
 
         <span>
           <a href="https://www.instagram.com/ayojokevents/" target="_blank">
-            <img class="img-fluid img-responsive social" src="{{asset('img/social/icon-17.png')}}" alt="">
+            <img class="img-fluid img-responsive social" src="{{asset('img/social/youtube.png')}}" alt="">
           </a>
         </span>
 
       </div>
     </div>
+
+
     <!-- Footer Copyright -->
-    <div class="row mt-5 mb-5">
+    <div class="row">
       <div class="col-lg-12 text-center">
-        <p class="copyright">&copy; 2018 Ayojok</p>
+        <p class="copyright">Copyright <?php echo date("Y") ?> Ayojok</p>
       </div>
     </div>
   </div>
 </footer>
 
 <!-- Footer End-->
+
 
 <!-- Bootstrap core JavaScript -->
 <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
@@ -333,19 +357,19 @@ $(".dropdown").hover(
     <!-- Load Facebook SDK for JavaScript -->
     {{-- <div id="fb-root"></div>
     <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
-  <!-- Your customer chat code -->
-  <div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="718944784960805"
-  theme_color="#ff7e29">
-</div> --}}
-@stack('scripts')
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="718944784960805"
+    theme_color="#ff7e29">
+  </div> --}}
+  @stack('scripts')
 </body>
 </html>

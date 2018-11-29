@@ -49,6 +49,8 @@ Route::get('/services/{catagory}/{product}','OurServices@Services')->name('Servi
 
 Route::get('/vendors/{catagory}','VendorServices@Services')->name('Vendors');
 Route::get('/vendors/{catagory}/{vendor}','VendorServices@vendor')->name('single-vendor');
+/*all vendors*/
+Route::get('/all_vendors','VendorServices@all_vendors')->name('all_vendors');
 
 // Route::get('/vendors/{catagory}/{vendor}','VendorServices@getAddToQuery')->name('query-vendor');
 
