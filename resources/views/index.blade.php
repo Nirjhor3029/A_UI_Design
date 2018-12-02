@@ -306,8 +306,15 @@
             </div>
 
         </div>
+
+
+
         <!-- ./Sub Service Ends-->
-        <a href="{{url('all_vendors')}}" class="btn btn-danger rounded btn-sm custom-btn" style="color: white;padding: 1% 5%;text-transform: none;background-color: #810D28">Load more</a>
+        <center><a href="{{url('all_vendors')}}" class="btn btn-danger rounded btn-sm custom-btn" style="color: white;padding: 1% 5%;text-transform: none;background-color: #810D28">Load more</a></center>
+
+
+
+
 
     </div>
 
@@ -499,9 +506,65 @@
                             vendors & budget.<br>
                         </p>
 
-                        <a href="#" class="btn btn-danger rounded btn-sm custom-btn"
+                        {{--<a href="#" class="btn btn-danger rounded btn-sm custom-btn"
                            style="color: white;padding: 1% 2%;text-transform: none;background-color: #810D28">Take me to
-                            tools</a>
+                            tools</a>--}}
+
+                        <div class="row planning_tools_icons" style="">
+
+                            {{--<div class="col-sm-6">
+                            </div>--}}
+
+
+                            @if (Auth::check())
+                                    <div class="col-sm-4 planning_tools_icon">
+                                        <a href="{{route('mychecklist',Auth::user()->id)}}" >
+                                            <img class="icon2" src="{{asset('img/planning-tools/my-checklist.png')}}">
+                                        </a>
+                                    </div>
+                            @else
+                                <div class="col-sm-4 planning_tools_icon">
+                                    <a href="#myModal"  data-toggle="modal">
+                                        <img class="icon2" src="{{asset('img/planning-tools/my-checklist.png')}}">
+                                    </a>
+                                </div>
+
+                            @endif
+
+
+
+
+                            @if (Auth::check())
+                                    <div class="col-sm-4 planning_tools_icon">
+                                        <a href="{{ route('myvendors', Auth::user()->id) }}">
+                                            <img class="icon2" src="{{asset('img/planning-tools/my-vendor.png')}}">
+                                        </a>
+                                    </div>
+                            @else
+                                <div class="col-sm-4 planning_tools_icon">
+                                    <a href="#myModal"  data-toggle="modal">
+                                        <img class="icon2" src="{{asset('img/planning-tools/my-vendor.png')}}">
+                                    </a>
+                                </div>
+                            @endif
+
+
+                            @if (Auth::check())
+                                    <div class="col-sm-4 planning_tools_icon">
+                                        <a href="{{route('mybudget')}}">
+                                            <img class="icon2" src="{{asset('img/planning-tools/budget-manager.png')}}">
+                                        </a>
+                                    </div>
+                            @else
+                                <div class="col-sm-4 planning_tools_icon">
+                                    <a href="#myModal"  data-toggle="modal">
+                                        <img class="icon2" src="{{asset('img/planning-tools/budget-manager.png')}}">
+                                    </a>
+                                </div>
+                            @endif
+
+
+                        </div>
                     </div>
                 </div>
             </div>

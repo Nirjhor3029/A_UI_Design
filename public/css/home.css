@@ -484,6 +484,10 @@ header.pagehead .scroll-down .btn:hover {
         margin-left: 0 !important;
     }
 
+    .icon2 {
+        margin-left: 0 !important;
+    }
+
     .content_ico3 {
         margin-right: 0 !important;
         text-align: center !important;
@@ -622,8 +626,38 @@ header.pagehead .scroll-down .btn:hover {
     height: 60px;
     width: 56px;
     color: orange;
-
     top: 10px;
+    padding-left: 10%;
+}
+
+
+.planning_tools_icons{
+    width: 50%;
+    margin-left: 50%;
+}
+
+
+.icon2 {
+    margin-left: 39%;
+    height: 60px;
+    width: 56px;
+    color: orange;
+    top: 10px;
+}
+@media (min-width: 640px) {
+    .icon2 {
+        width: 55px;
+    }
+
+}@media (min-width: 360px) {
+    .icon2 {
+        width: 40px;
+    }
+    .planning_tools_icon{
+        width: 40px;
+
+    }
+
 }
 
 .tag1 {
