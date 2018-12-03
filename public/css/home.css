@@ -467,18 +467,7 @@ header.pagehead .scroll-down .btn:hover {
         padding-bottom: 15px !important;
     }
 
-    .item div h4 {
-        position: absolute;
-        color: #FFF;
-        font-size: 12px !important;
-        display: block;
-        bottom: 6% !important;
-        padding: 10px !important;
-        max-width: 85% !important;
-        max-height: 20% !important;
-        background-color: rgba(34, 34, 34, 0.5);
 
-    }
 
     .icon1 {
         margin-left: 0 !important;
@@ -632,7 +621,7 @@ header.pagehead .scroll-down .btn:hover {
 
 
 .planning_tools_icons{
-    width: 50%;
+    width: 100%;
     margin-left: 50%;
 }
 
@@ -1863,7 +1852,7 @@ header.pagehead .fb-profile-text {
     font-size: 18px;
     display: block;
     bottom: -1%;
-    padding: 25px;
+    padding: 15px 0;
     max-width: 92%;
     background-color: rgba(34, 34, 34, 0.5);
 }
@@ -3072,8 +3061,10 @@ body h1 h2 h3 h4 h5 h6 {
 }
 
 .img-wrapper {
-    display: inline-block; /* change the default display type to inline-block */
+    display: inline-block;
+     /* change the default display type to inline-block */
     overflow: hidden;      /* hide the overflow */
+
 }
 
 
@@ -3097,3 +3088,69 @@ body h1 h2 h3 h4 h5 h6 {
       padding-right: 0px;
       margin-left: -40px;
 }
+
+.fontOverImage{
+    width:100%;
+    height: 50px;
+    z-index: 1;
+
+}
+@media (max-width: 992px) {
+    .fontOverImage{
+        width:89%;
+        height: 50px;
+        z-index: 1;
+        margin-bottom: 23px;
+
+    }
+}
+@media (max-width: 360px) {
+    .fontOverImage{
+        width:84%;
+        height: 50px;
+        z-index: 1;
+        margin-bottom: 23px;
+
+    }
+}
+@media (max-width: 1280px) {
+    .fontOverImage{
+        width:87%;
+        height: 50px;
+        z-index: 1;
+
+    }
+}
+
+
+.planning_tools_icons .col-sm-4 {
+
+    flex: 0 0 8.333333% !important;
+
+}
+
+
+/*Slider design*/
+span .irs-grid-text, span .irs-single {
+    font-size: 11px;
+}
+
+span .irs-bar {
+    background: white;
+}
+
+span .irs-bar-edge{
+    background: white;
+}
+
+span .irs-grid-text, span .irs-single{
+    font-size:11px;
+}
+
+span .irs-min , span .irs-max{
+    visibility: hidden !important;
+}
+span .irs-line-mid, span .irs-line-left, span .irs-line-right{
+    background: #36944b;
+}
+

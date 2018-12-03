@@ -36,7 +36,7 @@
                         <a href="{{url('vendors/'.$catagory ='venue')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Venue</h4>
+                                <h4 class="fontOverImage">Venue</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
@@ -51,21 +51,20 @@
                         <a href="{{url('vendors/'.$catagory ='catering')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Catering</h4>
+                                <h4 class="fontOverImage">Catering</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
                         </a>
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}">
+                        <a href="{{url('vendors/'.$catagory ='photography and cinematography')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Photography</h4>
+                                <h4 class="fontOverImage">Photography</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
@@ -78,7 +77,7 @@
                         <a href="{{url('vendors/'.$catagory ='decoration')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Decoration</h4>
+                                <h4 class="fontOverImage">Decoration</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
@@ -90,10 +89,10 @@
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='venue')}}">
+                        <a href="{{url('vendors/'.$catagory ='invitation cards')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Invitation cards</h4>
+                                <h4 class="fontOverImage">Invitation cards</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
@@ -105,24 +104,10 @@
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='catering')}}">
+                        <a href="{{url('vendors/'.$catagory ='dj')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">DJ</h4>
-                                <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
-                                     class="img-fluid mx-auto zoom" alt="">
-                            </div>
-                        </a>
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}"></a>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-lg-3">
-                    <div class="item">
-
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}">
-
-                            <div class="img-wrapper">
-                                <h4 style="width:100%;">Makeup Artist</h4>
+                                <h4 class="fontOverImage">DJ</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
@@ -132,10 +117,23 @@
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='decoration')}}">
+                        <a href="{{url('vendors/'.$catagory ='makeup artist')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Bakeries</h4>
+                                <h4 class="fontOverImage">Makeup Artist</h4>
+                                <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                                     class="img-fluid mx-auto zoom" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-lg-3">
+                    <div class="item">
+
+                        <a href="{{url('vendors/'.$catagory ='bakeries')}}">
+
+                            <div class="img-wrapper">
+                                <h4 class="fontOverImage">Bakeries</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
@@ -147,10 +145,10 @@
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='venue')}}">
+                        <a href="{{url('vendors/'.$catagory ='mehedi')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Mehedi</h4>
+                                <h4 class="fontOverImage">Mehedi</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
@@ -162,43 +160,40 @@
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='catering')}}">
+                        <a href="{{url('vendors/'.$catagory ='kazi')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Kazi</h4>
+                                <h4 class="fontOverImage">Kazi</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
                         </a>
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='catering')}}">
+                        <a href="{{url('services/'.$catagory ='vehicle')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Vehicle</h4>
+                                <h4 class="fontOverImage">Vehicle</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
                         </a>
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='catering')}}">
+                        <a href="{{url('services/'.$catagory ='light & sound')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Light & Sound</h4>
+                                <h4 class="fontOverImage">Light & Sound</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
                         </a>
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}"></a>
                     </div>
                 </div>
 
@@ -208,10 +203,10 @@
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='venue')}}">
+                        <a href="{{url('services/'.$catagory ='holud snacks')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Holud & Snacks</h4>
+                                <h4 class="fontOverImage">Holud & Snacks</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
@@ -223,43 +218,40 @@
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='catering')}}">
+                        <a href="{{url('services/'.$catagory ='dala kula')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Dala Kula</h4>
+                                <h4 class="fontOverImage">Dala Kula</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
                         </a>
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='catering')}}">
+                        <a href="{{url('services/'.$catagory ='holud')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Holud Accessories</h4>
+                                <h4 class="fontOverImage">Holud Accessories</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
                         </a>
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}"></a>
                     </div>
                 </div>
                 <div class="col-xs-6 col-lg-3">
                     <div class="item">
 
-                        <a href="{{url('vendors/'.$catagory ='catering')}}">
+                        <a href="{{url('services/'.$catagory ='wedding')}}">
 
                             <div class="img-wrapper">
-                                <h4 style="width:100%;">Wedding Accessories</h4>
+                                <h4 class="fontOverImage">Wedding Accessories</h4>
                                 <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
                                      class="img-fluid mx-auto zoom" alt="">
                             </div>
                         </a>
-                        <a href="{{url('vendors/'.$catagory ='photography & cinematography')}}"></a>
                     </div>
                 </div>
             </div>
