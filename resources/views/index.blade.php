@@ -86,7 +86,7 @@
 
                                 <a href="https://www.ayojok.com/how-it-works">
                                     <img class="icon1" src="img/icons/noun_Mouse select_1339603-Recovered.png">
-                                    <span>Choose vendors</span>
+                                    <span class="how_it_works_icon">Choose vendors</span>
                                 </a>
 
                             </div>
@@ -99,7 +99,7 @@
                                 <a href="https://www.ayojok.com/how-it-works">
 
                                     <img class="icon" src="img/icons/noun_Select Phone_1995650-Recovered.png">
-                                    <span>Get notified about availability</span>
+                                    <span class="how_it_works_icon">Get notified about availability</span>
                                 </a>
 
                             </div>
@@ -110,7 +110,7 @@
                                 <a href="https://www.ayojok.com/how-it-works">
 
                                     <img class="icon" src="img/icons/noun_Calendar_172264-v2.png">
-                                    <span>Confirm!</span>
+                                    <span class="how_it_works_icon">Confirm!</span>
                                 </a>
 
                             </div>
@@ -598,12 +598,14 @@
                                     <div class="col-sm-4 planning_tools_icon">
                                         <a href="{{route('mychecklist',Auth::user()->id)}}" >
                                             <img class="icon2" src="{{asset('img/planning-tools/my-checklist.png')}}">
+                                            <p class="mt-3">My Checklist</p>
                                         </a>
                                     </div>
                             @else
                                 <div class="col-sm-4 planning_tools_icon">
                                     <a href="#myModal"  data-toggle="modal">
                                         <img class="icon2" src="{{asset('img/planning-tools/my-checklist.png')}}">
+                                        <p class="mt-3">My Checklist</p>
                                     </a>
                                 </div>
 
@@ -613,12 +615,14 @@
                                     <div class="col-sm-4 planning_tools_icon">
                                         <a href="{{ route('myvendors', Auth::user()->id) }}">
                                             <img class="icon2" src="{{asset('img/planning-tools/my-vendor.png')}}">
+                                            <p class="mt-3">My Vendors</p>
                                         </a>
                                     </div>
                             @else
                                 <div class="col-sm-4 planning_tools_icon">
                                     <a href="#myModal"  data-toggle="modal">
                                         <img class="icon2" src="{{asset('img/planning-tools/my-vendor.png')}}">
+                                        <p class="mt-3">My Vendors</p>
                                     </a>
                                 </div>
                             @endif
@@ -627,12 +631,15 @@
                                     <div class="col-sm-4 planning_tools_icon">
                                         <a href="{{route('mybudget')}}">
                                             <img class="icon2" src="{{asset('img/planning-tools/budget-manager.png')}}">
+                                            <p class="mt-3">Budget Manager</p>
+
                                         </a>
                                     </div>
                             @else
                                 <div class="col-sm-4 planning_tools_icon">
                                     <a href="#myModal"  data-toggle="modal">
                                         <img class="icon2" src="{{asset('img/planning-tools/budget-manager.png')}}">
+                                        <p class="mt-3">Budget Manager</p>
                                     </a>
                                 </div>
                             @endif
