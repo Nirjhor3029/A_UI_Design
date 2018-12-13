@@ -20,7 +20,7 @@
             <div class="logos">
                 <img class="logo" src="img/ayojok_v2.png">
 
-                <p class="tagline" style="">Bangladesh’s biggest event booking service</p>
+                <p class="tagline" style="">Bangladesh’s first & biggest event booking service</p>
             </div>
             {{ Form::open(['route'=>'find', 'method' => 'post'])}}
             <div style="text-align:center;" class="catagory input-group">
@@ -40,25 +40,22 @@
                     </select>
                 </div>
                 <div class="col-lg-1 findbtn">
-                    {{ Form::button('Find',['class'=>'btn btn-search','type'=>'submit'])}}
+                    {{ Form::button('Go',['class'=>'btn btn-search','type'=>'submit'])}}
                 </div>
             </div>
             {{ Form::close() }}
-            <div class="mobile_view" style="display: inline-flex; padding-Top:15px; ">
+            <div class="mobile_view abc">
                 <div class="col-lg-6">
                     <i class="fa fa-check" aria-hidden="true"></i>
-        <span class="header-write" style="
-        font-size: 14px;">Find venues & vendors</span>
+                    <span class="header-write" style="font-size: 14px;">Find services</span>
                 </div>
                 <div class="col-lg-4 ">
                     <i class="fa fa-check" aria-hidden="true"></i>
-        <span class="header-write" style="
-        font-size: 14px;">Fast and Easy</span>
+                    <span class="header-write" style="font-size: 14px;">Fast and Easy</span>
                 </div>
                 <div class="col-lg-4 ">
                     <i class="fa fa-check" aria-hidden="true"></i>
-        <span class="header-write" style="
-        font-size: 14px;">Zero Hassle</span>
+                    <span class="header-write" style="font-size: 14px;">Zero Hassle</span>
                 </div>
             </div>
         </div>
@@ -74,11 +71,11 @@
 
             <div class="col-lg-12 text-center">
                 <div class="fb-profile-text" style="text-align:center;">
-                    <p class="fb-profile-text1">Ayojok brings wide selection of trusted venues and vendors for your
+                    <p class="fb-profile-text1">Ayojok brings wide selection of trusted event service providers for your
                         every budget and occasion.<br>
                         Save time & money as you browse all kinds of event related services anywhere, anytime.</p>
 
-                    <p class="tag1">How it works? Simple, easy & fast!</p>
+                    <p class="tag1">How it works? Simple, easy <span class="andSymbl">&</span> fast!</p>
 
                     <div class="row scroll-down" style="text-allign:center;">
                         <div class="col-lg-4">
@@ -132,7 +129,7 @@
 <section class="page-section pricing">
     <div class="container wow fadeIn mb-4">
         <div class="text-center wow fadeIn">
-            <p style="color:black; font-size:26px;">Find vendors at every budget</p>
+            <p style="color:black; font-size:26px;">Find services at every budget</p>
 
             <p style="color:black; font-size:18px;">Venues, catering, decoration, photographers & more</p>
         </div>
@@ -279,8 +276,6 @@
             </div>
 
 
-
-
             {{--Services start--}}
             <div class="col-xs-6 col-lg-3">
                 <div class="item">
@@ -313,8 +308,6 @@
         </div>
 
 
-
-
         <div class="row text-center mt-4" id="hidden_row" style="display: none">
             <div class="col-xs-6 col-lg-3">
                 <div class="item">
@@ -342,8 +335,6 @@
                     </a>
                 </div>
             </div>
-
-
 
 
             {{--Services start--}}
@@ -378,20 +369,13 @@
         </div>
 
 
-
-
-
-
-
-
         <!-- ./Sub Service Ends-->
-        <center><a href="{{url('all_vendors')}}" class="btn btn-danger rounded btn-sm custom-btn" style="color: white;padding: 1% 5%;text-transform: none;background-color: #810D28">Load more</a></center>
-{{--
-        <center><a href="javascript:void(0);" class="btn btn-danger rounded btn-sm custom-btn" style="color: white;padding: 1% 5%;text-transform: none;background-color: #567d81" onclick="makeDisplayBlock()">Load more</a></center>
---}}
-
-
-
+        <center><a href="{{url('all_vendors')}}" class="btn btn-danger rounded btn-sm custom-btn"
+                   style="color: white;padding: 1% 5%;text-transform: none;background-color: #810D28">Load more</a>
+        </center>
+        {{--
+                <center><a href="javascript:void(0);" class="btn btn-danger rounded btn-sm custom-btn" style="color: white;padding: 1% 5%;text-transform: none;background-color: #567d81" onclick="makeDisplayBlock()">Load more</a></center>
+        --}}
 
 
     </div>
@@ -561,7 +545,7 @@
                         <h4 style="" class="pricing_title"> Save time & money<br> and be stress free </h4>
 
                         <p class="pricing_para" style="text-transform: none">Our Event Coordinator <br>
-                            services give you control <br>
+                            gives you control <br>
                             and supervision over <br>
                             your events without<br>
                             hassle and stress. </p>
@@ -578,10 +562,10 @@
                     <div class="pricing_content">
                         <h4 style="" class="pricing_title"> Easy Planning<br> with easy tools </h4>
 
-                        <p class="pricing_para" style="text-transform: none">Use our free planning tools <br>
-                            to plan & manage your <br>
-                            event-manage checklists, <br>
-                            vendors & budget.<br>
+                        <p class="pricing_para" style="text-transform: none">Plan your wedding the right way  <br>
+                            with our effective free planning tools. <br>
+                            Manage checklists, vendors,<br>
+                            budgets and more.<br>
                         </p>
 
                         {{--<a href="#" class="btn btn-danger rounded btn-sm custom-btn"
@@ -595,16 +579,18 @@
 
 
                             @if (Auth::check())
-                                    <div class="col-sm-4 planning_tools_icon">
-                                        <a href="{{route('mychecklist',Auth::user()->id)}}" >
-                                            <img class="icon2" src="{{asset('img/planning-tools/my-checklist.png')}}">
-                                            <p class="mt-3">My Checklist</p>
-                                        </a>
-                                    </div>
+                                <div class="col-sm-4 planning_tools_icon">
+                                    <a href="{{route('mychecklist',Auth::user()->id)}}">
+                                        <img class="icon2" src="{{asset('img/planning-tools/my-checklist.png')}}">
+
+                                        <p class="mt-3">My Checklist</p>
+                                    </a>
+                                </div>
                             @else
                                 <div class="col-sm-4 planning_tools_icon">
-                                    <a href="#myModal"  data-toggle="modal">
+                                    <a href="#myModal" data-toggle="modal">
                                         <img class="icon2" src="{{asset('img/planning-tools/my-checklist.png')}}">
+
                                         <p class="mt-3">My Checklist</p>
                                     </a>
                                 </div>
@@ -612,33 +598,37 @@
                             @endif
 
                             @if (Auth::check())
-                                    <div class="col-sm-4 planning_tools_icon">
-                                        <a href="{{ route('myvendors', Auth::user()->id) }}">
-                                            <img class="icon2" src="{{asset('img/planning-tools/my-vendor.png')}}">
-                                            <p class="mt-3">My Vendors</p>
-                                        </a>
-                                    </div>
+                                <div class="col-sm-4 planning_tools_icon">
+                                    <a href="{{ route('myvendors', Auth::user()->id) }}">
+                                        <img class="icon2" src="{{asset('img/planning-tools/my-vendor.png')}}">
+
+                                        <p class="mt-3">My Vendors</p>
+                                    </a>
+                                </div>
                             @else
                                 <div class="col-sm-4 planning_tools_icon">
-                                    <a href="#myModal"  data-toggle="modal">
+                                    <a href="#myModal" data-toggle="modal">
                                         <img class="icon2" src="{{asset('img/planning-tools/my-vendor.png')}}">
+
                                         <p class="mt-3">My Vendors</p>
                                     </a>
                                 </div>
                             @endif
 
                             @if (Auth::check())
-                                    <div class="col-sm-4 planning_tools_icon">
-                                        <a href="{{route('mybudget')}}">
-                                            <img class="icon2" src="{{asset('img/planning-tools/budget-manager.png')}}">
-                                            <p class="mt-3">Budget Manager</p>
+                                <div class="col-sm-4 planning_tools_icon">
+                                    <a href="{{route('mybudget')}}">
+                                        <img class="icon2" src="{{asset('img/planning-tools/budget-manager.png')}}">
 
-                                        </a>
-                                    </div>
+                                        <p class="mt-3">Budget Manager</p>
+
+                                    </a>
+                                </div>
                             @else
                                 <div class="col-sm-4 planning_tools_icon">
-                                    <a href="#myModal"  data-toggle="modal">
+                                    <a href="#myModal" data-toggle="modal">
                                         <img class="icon2" src="{{asset('img/planning-tools/budget-manager.png')}}">
+
                                         <p class="mt-3">Budget Manager</p>
                                     </a>
                                 </div>
@@ -782,7 +772,7 @@
 
 
 <script>
-    function makeDisplayBlock(){
+    function makeDisplayBlock() {
         document.getElementById('hidden_row').style.display = "flex";
     }
 </script>

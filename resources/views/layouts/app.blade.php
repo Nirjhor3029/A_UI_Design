@@ -88,33 +88,35 @@
                     <li class="nav-item dropdown">
                         {{-- <a class="nav-link" href="{{url('our-services')}}">Ayojok Services</a> --}}
                         <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ayojok Services</a>
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                         <ul class="megamenu dropdown-menu scrollable-menu " id="dropdown-menu"
                             aria-labelledby="navbarDropdown">
                             <li>
                                 <div class="row">
                                     <div class="col-lg-4 menu_padding">
                                         <ul>
-                                            <li><a href="{{url('services/'.$catagory ='vehicle')}}"> <img
+                                            <li><a href="{{url('services/'.$catagory ='vehicle')}}"> {{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/car.png')}}"> Vehicle</a></li>
-                                            <li><a href="{{url('services/'.$catagory ='light & sound')}}"><img
+                                                            src="{{asset('img/menu/car.png')}}">--}} Vehicle</a></li>
+                                            <li><a href="{{url('services/'.$catagory ='light & sound')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/light.png')}}"> Light & Sound</a></li>
-                                            <li><a href="{{url('services/'.$catagory ='holud snacks')}}"><img
-                                                            class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/holud_snacks.png')}}"> Holud Snacks</a></li>
-                                            <li><a href="{{url('services/'.$catagory ='dala kula')}}"><img
-                                                            class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/car.png')}}"> Dala Kula</a></li>
-                                            {{--Secend edit--}}
-                                            <li><a href="{{url('services/'.$catagory ='holud')}}"> <img
-                                                            class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/car.png')}}"> Holud Accessories</a>
+                                                            src="{{asset('img/menu/light.png')}}">--}} Light & Sound</a>
                                             </li>
-                                            <li><a href="{{url('services/'.$catagory ='wedding')}}"><img
+                                            <li><a href="{{url('services/'.$catagory ='holud snacks')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/wedding.png')}}"> Wedding Accessories</a>
+                                                            src="{{asset('img/menu/holud_snacks.png')}}">--}} Holud
+                                                    Snacks</a></li>
+                                            <li><a href="{{url('services/'.$catagory ='dala kula')}}">{{--<img
+                                                            class="logo_as_megamenu"
+                                                            src="{{asset('img/menu/car.png')}}">--}} Dala Kula</a></li>
+                                            {{--Secend edit--}}
+                                            <li><a href="{{url('services/'.$catagory ='holud')}}"> {{--<img
+                                                            class="logo_as_megamenu"
+                                                            src="{{asset('img/menu/car.png')}}">--}} Holud Accessories</a>
+                                            </li>
+                                            <li><a href="{{url('services/'.$catagory ='wedding')}}">{{--<img
+                                                            class="logo_as_megamenu"
+                                                            src="{{asset('img/menu/wedding.png')}}">--}} Wedding Accessories</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -132,42 +134,45 @@
                                     <div class="col-lg-4">
 
                                         <ul>
-                                            <li><a href="{{url('vendors/'.$catagory ='venue')}}"><img
+                                            <li><a href="{{url('vendors/'.$catagory ='venue')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/venue.png')}}"> Venue</a></li>
-                                            <li><a href="{{url('vendors/'.$catagory ='catering')}}"><img
+                                                            src="{{asset('img/menu/venue.png')}}">--}} Venue</a></li>
+                                            <li><a href="{{url('vendors/'.$catagory ='catering')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/catering.png')}}"> Catering</a></li>
+                                                            src="{{asset('img/menu/catering.png')}}">--}} Catering</a></li>
                                             <li>
-                                                <a href="{{url('vendors/'.$catagory ='photography and cinematography')}}"><img
+                                                <a href="{{url('vendors/'.$catagory ='photography and cinematography')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/photo.png')}}"> Photography</a></li>
-                                            <li><a href="{{url('vendors/'.$catagory ='decoration')}}"><img
+                                                            src="{{asset('img/menu/photo.png')}}">--}} Photography</a></li>
+                                            <li><a href="{{url('vendors/'.$catagory ='decoration')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/decoration.png')}}"> Decoration</a></li>
-                                            <li><a href="{{url('vendors/'.$catagory ='invitation cards')}}"><img
+                                                            src="{{asset('img/menu/decoration.png')}}">--}} Decoration</a>
+                                            </li>
+                                            <li><a href="{{url('vendors/'.$catagory ='invitation cards')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/invitation_card.png')}}"> Invitation Cards</a>
+                                                            src="{{asset('img/menu/invitation_card.png')}}">--}} Invitation
+                                                    Cards</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 menu_padding_3">
                                         <ul>
-                                            <li><a href="{{url('vendors/'.$catagory ='dj')}}"><img
+                                            <li><a href="{{url('vendors/'.$catagory ='dj')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/dj.png')}}"> DJ</a></li>
-                                            <li><a href="{{url('vendors/'.$catagory ='makeup artist')}}"><img
+                                                            src="{{asset('img/menu/dj.png')}}">--}} DJ</a></li>
+                                            <li><a href="{{url('vendors/'.$catagory ='makeup artist')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/makeup.png')}}"> Makeup Artist</a></li>
-                                            <li><a href="{{url('vendors/'.$catagory ='bakeries')}}"><img
+                                                            src="{{asset('img/menu/makeup.png')}}">--}} Makeup Artist</a>
+                                            </li>
+                                            <li><a href="{{url('vendors/'.$catagory ='bakeries')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/bakeries.png')}}"> Bakeries</a></li>
-                                            <li><a href="{{url('vendors/'.$catagory ='mehedi')}}"><img
+                                                            src="{{asset('img/menu/bakeries.png')}}">--}} Bakeries</a></li>
+                                            <li><a href="{{url('vendors/'.$catagory ='mehedi')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/car.png')}}"> Mehedi</a></li>
-                                            <li><a href="{{url('vendors/'.$catagory ='kazi')}}"><img
+                                                            src="{{asset('img/menu/car.png')}}">--}} Mehedi</a></li>
+                                            <li><a href="{{url('vendors/'.$catagory ='kazi')}}">{{--<img
                                                             class="logo_as_megamenu"
-                                                            src="{{asset('img/menu/car.png')}}"> Kazi</a></li>
+                                                            src="{{asset('img/menu/car.png')}}">--}} Kazi</a></li>
                                         </ul>
                                     </div>
 
@@ -207,17 +212,22 @@
                                     {{Auth::user()->fname}}
                                 @endif
                             </a>
-                            <ul class="megamenu dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="megamenu dropdown-menu scrollable-menu" id="dropdown-menu"
+                                aria-labelledby="navbarDropdown">
                                 <li>
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <ul>
                                                 {{--<li><a href="{{route('my-account')}}">My Account</a></li>--}}
                                                 <li><a href="{{route('wishlist.index')}}">My Wishlist</a></li>
-                                                <li><a href="{{route('myvendors', Auth::user()->id)}}">My Vendors</a></li>
-                                                <li><a href="{{route('mychecklist',Auth::user()->id)}}">My Checklist</a></li>
+                                                <li><a href="{{route('myvendors', Auth::user()->id)}}">My Vendors</a>
+                                                </li>
+                                                <li><a href="{{route('mychecklist',Auth::user()->id)}}">My Checklist</a>
+                                                </li>
                                                 <li><a href="{{route('mybudget')}}">Budget Manager</a></li>
-                                                <li><a title="Personal information" href="{{route('personal-info.edit', Auth::user()->id )}}">Personal Information</a></li>
+                                                <li><a title="Personal information"
+                                                       href="{{route('personal-info.edit', Auth::user()->id )}}">Personal
+                                                        Information</a></li>
 
                                             </ul>
                                         </div>
@@ -225,11 +235,14 @@
                                         <div class="col-sm-6">
                                             <ul>
                                                 {{--<li><a href="{{route('my-account')}}">My Account</a></li>--}}
-                                                <li><a href="{{route('User.Message')}}">My inbox (<span id="inboxmess">@include('extra.mess')</span>)</a></li>
+                                                <li><a href="{{route('User.Message')}}">My inbox (<span
+                                                                id="inboxmess">@include('extra.mess')</span>)</a></li>
                                                 <li><a href="{{route('confirm-query')}}">My queries</a></li>
-                                                <li><a href="{{route('client-orderlist', Auth::user()->id)}}">Order List</a>
+                                                <li><a href="{{route('client-orderlist', Auth::user()->id)}}">Order
+                                                        List</a>
                                                 <li><a href="{{route('payment')}}">Payment</a></li>
-                                                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Logout">
+                                                <li class="nav-item" data-toggle="tooltip" data-placement="bottom"
+                                                    title="Logout">
                                                     <a class="nav-link" href="{{ route('logout') }}"
                                                        onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
 
@@ -273,6 +286,7 @@
         </div>
     </nav>
 </div>
++
 
 @yield('content')
 
@@ -317,7 +331,7 @@
         <!-- Row Social and Menu -->
         <div class="row">
             <!-- Footer Menu -->
-            <div class="col-lg-8 mb-5" style="display: inherit;">
+            <div class="col-lg-8 mb-4 mt-2" style="display: inherit;">
         <span class="footer-menu">
           <a href="{{url('about-us')}}">About Us</a>
         </span>
