@@ -224,7 +224,7 @@
                                                 </li>
                                                 <li><a href="{{route('mychecklist',Auth::user()->id)}}">My Checklist</a>
                                                 </li>
-                                                <li><a href="{{route('mybudget')}}">Budget Manager</a></li>
+                                                <li><a href="{{route('mybudget')}}">My Budget</a></li>
                                                 <li><a title="Personal information"
                                                        href="{{route('personal-info.edit', Auth::user()->id )}}">Personal
                                                         Information</a></li>
@@ -286,9 +286,12 @@
         </div>
     </nav>
 </div>
-+
 
-@yield('content')
+
+    @yield('content')
+
+
+
 
         <!-- Footer -->
 <footer class="footer"

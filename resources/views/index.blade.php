@@ -65,7 +65,7 @@
 
 <!-- /End FB Profile Style -->
 <section class=" bg-white">
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row row pt-2 pb-3">
 
@@ -141,7 +141,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Venue</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Venue.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -156,7 +156,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Catering</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Catering.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -170,7 +170,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Photography</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Photography.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -183,7 +183,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Decoration</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Decoration.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -200,7 +200,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Invitation Cards</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Invitation Card.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -213,7 +213,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">DJ</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Dj.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -226,7 +226,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Makeup Artist</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Make Up.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -239,7 +239,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Bakeries</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Bakeries.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -255,7 +255,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Mehedi</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Mehedi.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -268,7 +268,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Kazi</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Kazi.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -284,7 +284,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Vehicle</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Vehicle.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -298,7 +298,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">light & sound</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Lighting.jpg')}}"
                                  class="img-fluid mx-auto zoom " alt="">
                         </div>
                     </a>
@@ -316,7 +316,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Holud Snacks</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Holud Snacks.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -329,7 +329,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Dala Kula</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Dala-Kula.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -345,7 +345,7 @@
 
                         <div class="img-wrapper">
                             <h4 class="fontOverImage">Holud</h4>
-                            <img src="https://ayojok.com/ideas-and-stories/wp-content/uploads/2018/11/37935754_1167663213386587_8347775346484969472_o.jpg"
+                            <img src="{{asset('img/final/Venue.jpg')}}"
                                  class="img-fluid mx-auto zoom" alt="">
                         </div>
                     </a>
@@ -583,7 +583,7 @@
                                     <a href="{{route('mychecklist',Auth::user()->id)}}">
                                         <img class="icon2" src="{{asset('img/planning-tools/my-checklist.png')}}">
 
-                                        <p class="mt-3">My Checklist</p>
+                                        <p class="mt-3">My <br> Checklist</p>
                                     </a>
                                 </div>
                             @else
@@ -591,7 +591,7 @@
                                     <a href="#myModal" data-toggle="modal">
                                         <img class="icon2" src="{{asset('img/planning-tools/my-checklist.png')}}">
 
-                                        <p class="mt-3">My Checklist</p>
+                                        <p class="mt-3">My <br> Checklist</p>
                                     </a>
                                 </div>
 
@@ -602,7 +602,7 @@
                                     <a href="{{ route('myvendors', Auth::user()->id) }}">
                                         <img class="icon2" src="{{asset('img/planning-tools/my-vendor.png')}}">
 
-                                        <p class="mt-3">My Vendors</p>
+                                        <p class="mt-3">My <br> Vendors</p>
                                     </a>
                                 </div>
                             @else
@@ -610,7 +610,7 @@
                                     <a href="#myModal" data-toggle="modal">
                                         <img class="icon2" src="{{asset('img/planning-tools/my-vendor.png')}}">
 
-                                        <p class="mt-3">My Vendors</p>
+                                        <p class="mt-3">My <br> Vendors</p>
                                     </a>
                                 </div>
                             @endif
@@ -620,7 +620,7 @@
                                     <a href="{{route('mybudget')}}">
                                         <img class="icon2" src="{{asset('img/planning-tools/budget-manager.png')}}">
 
-                                        <p class="mt-3">Budget Manager</p>
+                                        <p class="mt-3">My <br> Budget</p>
 
                                     </a>
                                 </div>
@@ -629,7 +629,7 @@
                                     <a href="#myModal" data-toggle="modal">
                                         <img class="icon2" src="{{asset('img/planning-tools/budget-manager.png')}}">
 
-                                        <p class="mt-3">Budget Manager</p>
+                                        <p class="mt-3">My <br> Budget Manager</p>
                                     </a>
                                 </div>
                             @endif

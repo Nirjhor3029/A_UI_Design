@@ -406,8 +406,8 @@ header.pagehead .scroll-down .btn:hover {
 
 @media (min-width: 992px) {
     header.masthead {
-        height: 60vh;
-        min-height: 600px;
+        height: 35vh;
+        min-height: 300px;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -471,6 +471,7 @@ header.pagehead .scroll-down .btn:hover {
 
     .icon1 {
         margin-left: 0 !important;
+        padding-left: 0 !important;
     }
 
     .icon2 {
@@ -559,8 +560,8 @@ header.pagehead .scroll-down .btn:hover {
 
     .logo {
         height: 100%;
-        width: 45% !important;
-        margin-top: -15%;
+        width: 31% !important;
+        margin-top: -10%;
     }
 
     header.masthead .scroll-down .catagory .search-cat {
@@ -641,10 +642,12 @@ header.pagehead .scroll-down .btn:hover {
 
 }@media (min-width: 360px) {
     .icon2 {
-        width: 40px;
+        width: 30px;
+        height: 30px;
     }
     .planning_tools_icon{
         width: 40px;
+
 
     }
 
@@ -657,11 +660,11 @@ header.pagehead .scroll-down .btn:hover {
 
 @media (min-width: 1320px) {
     header.masthead {
-        height: 35vh;
+        height: 38vh;
         min-height: 290px;
         padding-top: 0;
         padding-bottom: 0;
-        margin-top: 3rem;
+        margin-top: 1rem;
         background-color: white;
     }
 
@@ -2527,6 +2530,7 @@ ul.pack-tabs > li {
     overflow: hidden;
     margin-top: 7px;
     width: 30rem;
+    margin-left: -143px;
 }
 
 .megamenu li, .megamenu li a {
@@ -3076,6 +3080,8 @@ body h1 h2 h3 h4 h5 h6 {
     display: inline-block;
      /* change the default display type to inline-block */
     overflow: hidden;      /* hide the overflow */
+
+
 
 }
 
